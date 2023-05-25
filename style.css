@@ -9,11 +9,6 @@
 
 body {
     width: 100%;
-    
-    background-image: url("images/Ayroza-Blog-Fisio.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
 }
 
 .flex {
@@ -24,7 +19,7 @@ body {
 header {
     width: 100%;
     height: 110px;
-    padding: 30px;
+    padding-top: 40px;
     background-color: #d2fb72;
     color: #046525;
 
@@ -36,19 +31,23 @@ header {
 }
 
 header img {
-    height: 90px;
-    width: 90px;
+    height: 70px;
+    width: 70px;
 }
 
+
+
 #logo {
-    font-size: 35px;
+    font-size: 20px;
     font-family: 'Gruppo', cursive;
     font-weight: bold;
+    padding-bottom: 20px;
 }
 
 #menu {    
     gap: 30px;
     list-style: none;
+    padding-top: 15px;
 }
 
 #menu a {
@@ -56,7 +55,7 @@ header img {
     text-decoration: none;
     font-weight: 400;
     font-family: 'IBM Plex Sans Condensed', sans-serif;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 #menu a:after{
@@ -73,20 +72,87 @@ header img {
     width: 75%;
 }
 
+#home {
+    width: 100%;
+    height: 650px;
+    padding: 20px;
+
+
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    color: #046525;
+    background-image: url("images/Ayroza-Blog-Fisio.png");
+    background-position-y: 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#text-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    gap: 30px;
+    width: 50%;
+}
+
+#text-home h1 {
+    font-size: 40px;
+    text-shadow: 1px 6px 22px #04652465;
+}
+
+#text-home p {
+    font-size: 20px;
+}
+
 .cursor {
     cursor: pointer;
 }
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-} 
 
 .section {
     background-color: transparent;
     width: 75%;
     height: 1000px;
     border: 2px solid black;
+}
+
+#treatments {
+    width: 100%;
+    min-height: 500px;
+    padding: 50px;
+    display: flex;
+    gap: 20px;
+    background-color: #f4f4f4;
+    list-style: none;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.397);
+}
+
+#terapias {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 60%;
+    font-size: 24px;
+}
+
+#terapias h2 {
+    font-size: 30px;
+    color: #afe239;
+    font-weight: bolder;
+}
+
+#terapias summary::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: rgba(100, 100, 100, 0.486);
+    display: block;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+#examples img {
+    width: 225px;
+    height: 225px;
 }
